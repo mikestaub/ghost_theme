@@ -20,6 +20,15 @@
   display: block;
   margin: 10px 0;
 }
+.staub-custom1{
+  position: absolute;
+  bottom: 0;
+  margin: 0 !important;
+}
+.ghost-btn.block.staub-custom2 {
+  float: left;
+  margin: 5px;
+}
 .ghost-btn.ghost-btn-negative {
   border: 1px solid #4a4a4a;
   color: #4a4a4a;

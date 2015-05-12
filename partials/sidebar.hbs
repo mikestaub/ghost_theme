@@ -24,12 +24,11 @@
         <div class="inner">
             {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
             <h1 class="page-title">{{@blog.title}}</h1>
+            {{> "social"}}
             <h4 class="page-description">{{@blog.description}}</h4>
         </div>
 
-        {{> "social"}}
-
-        <div class="pages">
+        <div class="pages staub-custom1">
             {{#if @blog.navigation}}
                 {{navigation}}
             {{else}}
