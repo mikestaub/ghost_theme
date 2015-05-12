@@ -6,9 +6,7 @@
         {{#if @blog.navigation}}
             {{navigation}}
         {{else}}
-            <a href="{{@blog.url}}/rss/" class="" >Subscribe</a>
             <a href="/about/" class="">About</a>
-            <a href="/contact/" class="">Contact</a>
         {{/if}}
     </div>
 </div>
@@ -29,17 +27,15 @@
             <h4 class="page-description">{{@blog.description}}</h4>
         </div>
 
+        {{> "social"}}
+
         <div class="pages">
             {{#if @blog.navigation}}
                 {{navigation}}
             {{else}}
-                <a href="{{@blog.url}}/rss/" class="ghost-btn block" >Subscribe</a>
                 <a href="/about/" class="ghost-btn block">About</a>
-                <a href="/contact/" class="ghost-btn block">Contact</a>
             {{/if}}
         </div>
-
-        {{> "social"}}
 
     </div>
 </header>

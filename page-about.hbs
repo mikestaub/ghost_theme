@@ -33,32 +33,8 @@
 
             <footer class="post-footer {{#if image}}has-avatar{{/if}}">
 
-            {{! Everything inside the #author tags pulls data from the author }}
-            {{#author}}
-                <div class="v-card">
-                    {{#if image}}
-                        <figure class="author-image">
-                            <a class="img" href="{{url}}"><img src="{{ image }}" alt=""></a>
-                        </figure>
-                    {{/if}}
-
-                    <section class="author">
-                        <h4><a href="{{url}}">{{name}}</a></h4>
-
-                        {{#if bio}}
-                            <p>{{bio}}</p>
-                        {{/if}}
-                        
-                        <div class="author-meta">
-                            {{#if location}}<span class="author-location icon-location">Located on {{location}}</span> <br>{{/if}} 
-                            {{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
-                        </div>
-                    </section>
-                </div>
-            {{/author}}
-
                 {{! The big featured header }}
-                {{> "comments"}}
+                {{!-- {{> "comments"}} --}}
 
             </footer>
 
